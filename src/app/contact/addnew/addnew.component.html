@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="col-md-1">
+        <i class="fa fa-user-o"></i>
+    </div>
+    <div class="col-md-5">
+        <form>
+            <md-form-field class="example-full-width" id="example-full-width1">
+                <input mdInput required placeholder="First Name..." value="">
+            </md-form-field>
+            <md-form-field class="example-full-width" id="example-full-width2">
+                <input mdInput required placeholder="Last Name..." value="">
+            </md-form-field>
+            <md-form-field class="example-full-width" id="example-full-width3">
+                <input mdInput placeholder="Middle Name..." value="">
+            </md-form-field>
+            <md-form-field id="example-full-width3" id="example-full-width11">
+                <input mdInput [mdDatepicker]="picker" placeholder="Choose a date">
+                <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+                <md-datepicker #picker></md-datepicker>
+            </md-form-field>
+            <md-form-field class="example-full-width" id="example-full-width4">
+                <input mdInput placeholder="" value="12">
+            </md-form-field><br>
+            <md-form-field class="example-full-width" id="example-full-width5">
+                <textarea mdInput required placeholder="Permanent Address"></textarea>
+            </md-form-field>
+            <br>
+            <img id="image-content" *ngIf="image" [src]="image"><br><br>
+            <button md-raised-button ngFilePicker (filePick)="image = $event.dataURL" class="btn" id="example-full-width6">Browse Image File</button>
+            <!-- <button md-raised-button>Click here to upload avatar!</button>
+        <button type="button" ngFilePicker accept="image/*" (filePick)="file = $event">
+        Browse
+        </button>-->
+
+        </form>
+    </div>
+    <div class="col-md-1">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+    </div>
+    <div class="col-md-5">
+        <form>
+            <md-form-field class="example-full-width" id="example-full-width7">
+                <input mdInput #Phone Number1 required maxlength="10" placeholder="Phone Number1" value="">
+                <!-- <md-hint align="end">{{postalCode.value.length}} / 5</md-hint> -->
+            </md-form-field>
+            <md-form-field class="example-full-width" id="example-full-width8">
+                <input mdInput #Phone Number2 required maxlength="10" placeholder="Phone Number2" value="">
+                <!-- <md-hint align="end">{{postalCode.value.length}} / 5</md-hint> -->
+            </md-form-field><br>
+            <md-form-field class="example-full-width" id="example-full-width9">
+                <input required mdInput placeholder="Email" [formControl]="emailFormControl">
+                <md-error *ngIf="emailFormControl.hasError('pattern')">
+                    Please enter a valid email address
+                </md-error>
+                <md-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                </md-error>
+            </md-form-field><br>
+            <md-form-field class="example-full-width" id="example-full-width10">
+                <textarea mdInput placeholder="Alternative Address"></textarea>
+            </md-form-field><br>
+            <button md-raised-button>Save this contact</button>
+            <button md-raised-button>Clear</button>
+            <button md-raised-button>Cancle</button>
+        </form>
+    </div>
+</div>

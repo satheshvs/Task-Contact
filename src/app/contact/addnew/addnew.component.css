@@ -1,0 +1,41 @@
+* {
+    margin-top: 10px;
+}
+
+button {
+    background: #9E9999;
+    margin-top: 50px;
+}
+
+i {
+    font-size: 36px;
+    padding-top: 100px;
+}
+
+.example-full-width {
+    padding: 30px;
+}
+
+#image-content {
+    width: 30%;
+}
+
+.btn {
+    margin-top: 0px !important;
+}
+
+#example-full-width5,
+#example-full-width9,
+#example-full-width10 {
+    width: 100%;
+}
+
+#example-full-width3,
+#example-full-width11,
+#example-full-width4 {
+    width: 30%;
+}
+
+.pagination {
+    border: none;
+}

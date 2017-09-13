@@ -1,0 +1,44 @@
+.active {
+    background-color: #4CAF50 !important;
+}
+
+.icon-bar1 {
+    background-color: white;
+    border: 2px solid black;
+    font-size: 25px;
+    margin-left: 96px;
+    padding-top: 10px;
+    align-self: auto;
+    position: relative;
+}
+
+.loguser {
+    font-size: 15px;
+    padding-right: 30px;
+}
+
+.limg img {
+    border-radius: 30px;
+    background: #B2A3A3;
+    width: 4vw;
+}
+
+li {
+    list-style: none;
+    display: block;
+    position: relative;
+}
+
+#loglist {
+    position: absolute;
+    z-index: 3;
+}
+
+.ulist {
+    font-size: 18px;
+    padding-right: 70px;
+}
+
+.loguser {
+    margin-right: -60px;
+}

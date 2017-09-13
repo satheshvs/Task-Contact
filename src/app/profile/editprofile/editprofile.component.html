@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="form-group col-md-3 ">
+                    <label for="fname">First Name*</label>
+                    <input type="text" class="form-control" id="fname" size="20px">
+                </div>
+                <div class="form-group col-md-3 ">
+                    <label for="lname">Last Name*</label>
+                    <input type="text" class="form-control" id="lname" size="20px">
+                </div>
+                <div class="form-group col-md-3 ">
+                    <label for="mname">Middle Name</label>
+                    <input type="text" class="form-control" id="mname" size="20px">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-3 ">
+                    <label for="dob">DOB*</label>
+                    <input type="date" class="form-control" [(ngModel)]="birthdate" id="birthdate" ng-required="required">
+                </div>
+                <div class="form-group col-md-3 ">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" [(ngModel)]="age" id="age">
+                </div>
+                <div class="form-group col-md-3 ">
+                    <label for="email">Email*</label>
+                    <input type="email" class="form-control input-sm" id="email">
+                </div>
+            </div><br>
+            <div class="row" id="crow">
+                <div class="form-group col-md-3" id="contact">
+                    <label for="number">Contact No1*</label>
+                    <input type="number" class="form-control input-sm" length="10" id="no1"><br>
+                    <label for="number">Contact No2*</label>
+                    <input type="number" class="form-control input-sm" id="no2" maxlength="10">
+                </div>
+
+                <div class="form-group col-md-6 ">
+                    <label for="about">Address</label>
+                    <input type="text" class="form-control input-lg" id="address">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <label for="about">About Me</label>
+                    <input type="text" class="form-control input-lg" id="about">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group col-md-3" id="image">
+            <img id="image-content" *ngIf="image" [src]="image"><br><br>
+            <button md-raised-button ngFilePicker (filePick)="image = $event.dataURL">Click Here To Upload your photo</button><br><br>
+            <input type="submit" onclick="myFunction()" value="Save My Info">
+            <input type="button" onclick="myFunction()" value="Reset">
+            <input type="button" onclick="myFunction()" value="Cancel">
+        </div>
+
+    </div>
+</div>
