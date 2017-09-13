@@ -21,3 +21,7 @@ img {
     background: #FCFBFB;
     width: 3vw;
 }
+
+.tfoot-block {
+    margin-left: 26vw !important;
+}
