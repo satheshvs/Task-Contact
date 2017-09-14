@@ -11,17 +11,8 @@ th {
     padding: 3px;
 }
 
-
-/* tr:nth-child(even) {
-    background-color: #dddddd;
-} */
-
 img {
     border-radius: 30px;
     background: #FCFBFB;
     width: 3vw;
-}
-
-.tfoot-block {
-    margin-left: 26vw !important;
 }
